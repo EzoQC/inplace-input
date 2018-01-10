@@ -1,0 +1,2 @@
+<p *ngIf="isNotEditing()" (click)="startEdtiting()">{{ value }}</p>
+<input *ngIf="isEditing()" [(ngModel)]="value" (keydown)="stopEditingIfEnterIsPressed($event)">
